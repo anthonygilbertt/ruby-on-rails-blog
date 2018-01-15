@@ -1,0 +1,30 @@
+<%= form_with(model: @blog_post, local: true) do |form| %>
+  <% if @blog_post.errors.any? %>
+    <div id= "error_explanation">
+      <h2>
+        <%= pluralize(@blog_post.errors.count, 'error') %>  prevented this blog post from being saved:
+          <ul>
+            <% @blog_post.error.full_messages.each do |message|  %>
+            <li><%= message %> </li>
+            <% end %>
+          </ul>
+      </h2>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.text_field :author, class: 'form-control', placeholder: 'Enter your name...' %>
+  </div>
+
+  <div class = "form-group">
+    <%= form.text_field :title, class: 'form-control', placeholder: 'Enter the blog post title...' %>
+  </div>
+
+  <div class = "form-group">
+    <%= form.text_area :blog_entry, class: 'form-control', placeholder: 'Enter your blog post message...' %>
+  </div>
+
+    <div class = "actions">
+      <%= form.submit 'Create Post', class: 'btn btn-primary'%>
+      </div>
+<% end %>
