@@ -42,9 +42,9 @@ class BlogPostsController < ApplicationController
 
     def destroy
       @blog_post.destroy
-      respong_to do |format|
-      format.html {redirect_to  blog_posts_path}
-    end
+            respond_to do |format|
+          format.html {redirect_to  blog_posts_path}
+        end
     end
 
     private
