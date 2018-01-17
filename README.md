@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Installation and usage
+To install (or update to the latest version):
 
-Things you may want to cover:
+gem install bundler
+To install a prerelease version (if one is available), run gem install bundler --pre. To uninstall Bundler, run gem uninstall bundler.
 
-* Ruby version
+Bundler is most commonly used to manage your application's dependencies. For example, these commands will allow you to use Bundler to manage the rspec gem for your application:
 
-* System dependencies
+bundle init
+echo 'gem "rspec"' >> Gemfile
+bundle install
+bundle exec rspec
+See bundler.io for the full documentation.
 
-* Configuration
+after running gem install bundler 
+you can run the test server by running rails s
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+questions
+email me: anthony.gilbert93@gmail.com
