@@ -40,6 +40,8 @@ class BlogPostsController < ApplicationController
     end
   end
 
+
+
     def destroy
       @blog_post.destroy
             respond_to do |format|
