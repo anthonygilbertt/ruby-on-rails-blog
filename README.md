@@ -3,7 +3,7 @@
 Installation and usage
 To install (or update to the latest version):
 
-"gem install bundler"
+`gem install bundler`
 To install a prerelease version (if one is available), run "gem install bundler --pre."
 To uninstall Bundler, run "gem uninstall bundler."
 
