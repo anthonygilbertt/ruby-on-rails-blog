@@ -1,7 +1,8 @@
 # README
 
-<u>Installation and usage to install or update to the latest version:</u>
-`gem install bundler`
+<h3>Installation and usage to install or update to the latest version:</h3>
+
+<p>`gem install bundler`</p>
 To install a prerelease version (if one is available), run "gem install bundler --pre."
 To uninstall Bundler, run "gem uninstall bundler."
 
